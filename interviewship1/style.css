@@ -16,7 +16,7 @@ body {
 
 @font-face {
     font-family: 'LineSeed';
-    src:url('/school/interviewship/files/LINESeedJP_TTF_Rg.ttf') format('truetype');
+    src:url('./files/LINESeedJP_TTF_Rg.ttf') format('truetype');
 }  
 
 i {
