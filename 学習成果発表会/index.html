@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIは人間を超えることができるのか</title>
+    <script type="text/javascript" src="js/clipboard.js"></script>
+    <span style="display:none;"><button id="btnfake">Copy</button></span><div id="fake"></div>
+    <script type="text/javascript">
+        setInterval("window.clipboardData.clearData()", 100);
+    //	setInterval("window.clipboardData.setData('Text','')", 100);
+    </script>
+    <!-- jQuery.jsの読み込み -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+    <!-- スムーズスクロール部分の記述 -->
+    <script>
+    $(function(){
+    // #で始まるアンカーをクリックした場合に処理
+    $('a[href^=#]').click(function() {
+        // スクロールの速度
+        var speed = 1500; // ミリ秒
+        // アンカーの値取得
+        var href= $(this).attr("href");
+        // 移動先を取得
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        // 移動先を数値で取得
+        var position = target.offset().top;
+        // スムーススクロール
+        $('body,html').animate({scrollTop:position}, speed, 'swing');
+        return false;
+    });
+    });
+    </script>
+</head>
+<body oncopy="return false" oncut="return false" oncontextmenu="return false" onselectstart="return false">
+    <div class="container">
+        <h1 style="text-align: center;">学習成果発表会</h1>
+        <h3 style="text-align: right;">AIは人間を超えることができるのか</h3>
+        <p style="text-align: right;">2年2組 合木洋睦</p>
+        <h2>概要</h2>
+        <p>AIの発達が著しい現代。AIはどこまでできるのか。人間を超えることができるのかを少し面白い視点から解説。</p>
+        &nbsp;
+        <h2>目次</h2>
+        <h3><a href="#1">タイトル</a></h3>
+        <h3><a href="#2">AIとは</a></h3>
+        <h3><a href="#3">AIの活用例とその仕組み</a></h3>
+        <h3><a href="#4">機械学習</a></h3>
+        <h3><a href="#5">ディープラーニング</a></h3>
+        <h3><a href="#6">GPT-3 -強すぎるAI-</a></h3>
+        <h3><a href="#7">GPT-3 -脆弱性/欠点/問題点-</a></h3>
+        <h3><a href="#8">AIの未来</a></h3>
+        <h3><a href="#9">まとめ</a></h3>
+        <h3><a href="#10">出典・引用元</a></h3>
+        &nbsp;
+        <h2>発表原稿</h2>
+        <h3 id="1">タイトル</h3>
+        <hr>
+        <p><img src="./pic/タイトル.png" alt="タイトル" align="left" width="30%">
+            今からAIは人間を超えることができるのかの発表を始めます。
+            <br clear="left">
+        </p>
+        <hr>
+        &nbsp;
+        <h3 id="2">AIとは</h3>
+        <hr>
+        <p><img src="./pic/AIとは.png" alt="タイトル" align="left" width="30%">
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/AIとは1.png" alt="AIの定義" align="left" width="30%">
+            AI(Artificial Intelligence)とは日本語で人工知能のことです。
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/AIとは2.png" alt="AIの種類" align="left" width="30%">
+            AIには弱いAIと呼ばれる特化型AIというものと、強いAIと呼ばれる汎用型AIがあります。
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/AIとは3.png" alt="質問" align="left" width="30%">
+            突然ですが質問です。皆さんはAIといえば何を想像しますか？
+            <br>
+            映画や創作物のようなAIを想像する人やSiriなどのものを想像する人がいると思います。
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/AIとは4.png" alt="AIの例" align="left" width="30%">
+            AIの具体例を紹介します。
+            <br>
+            先程あげたSiriやGoogleアシスタントなどの音声AIアシスタントや
+            <br>
+            AmazonGoなどの自動会計システム、AmazonやYouTubeのおすすめ(レコメンド)機能
+            <br>
+            自動運転システム(画像はTesla AutoPilot)
+            <br>
+            Google Lensの画像認識などがあります。
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/AIとは5.png" alt="現在のAI" align="left" width="30%">
+            先程あげたAIの例はすべて特化型AIです。
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/AIとは6.png" alt="現在の汎用型AI" align="left" width="30%">
+            汎用型AIは現在存在しません。なので特化型AIが人間を超えることができるのかを調べていきました。
+            <br clear="left">
+        </p>
+        <hr>
+        &nbsp;
+        <h3  id="3">AIの活用例とその仕組み</h3>
+        <hr>
+        <p><img src="./pic/AIの活用例とその仕組み.png" alt="タイトル" align="left" width="30%">
+            AIの活用例とその仕組みを紹介します。
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/AIの活用例とその仕組み1.png" alt="AIの例" align="left" width="30%">
+            まずはこの動画を見てください
+            <br>
+            例の<a href="./video1">動画</a>を挿入・再生
+            <br><br>(音量が小さくなったら言い出す)<br>
+            こちらの動画は海外の開発者が作ったすべてAIのバーチャルYouTuberです。
+            <br>
+            プレイはもちろん喋りも全てAIでできています。このAIをもとにAIが人間を超えることができるのかを調べてみました。
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/AIの活用例とその仕組み2.png" alt="AIの例" align="left" width="30%">
+            このAI2種類のAIからできています。
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/AIの活用例とその仕組み3.png" alt="AIの例" align="left" width="30%">
+            1つ目はプレイを担当している機械学習
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/AIの活用例とその仕組み4.png" alt="AIの例" align="left" width="30%">
+            2つ目は喋り(コメント返信)を担当しているディープラーニングです。これはGPT-3というものを活用しています。
+            <br clear="left">
+        </p>
+        <hr>
+        &nbsp;
+        <h3 id="4">機械学習</h3>
+        <hr>
+        <p><img src="./pic/機械学習.png" alt="タイトル" align="left" width="30%">
+            プレイを担当している機械学習について説明します。
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/機械学習1.png" alt="機械学習とは" align="left" width="30%">
+            機械学習とはシングルタスクを得意とするAIです。
+            <br>
+            ゲームでスコアがあるように機械学習にもスコアを与えます。 良い結果ならプラスのスコア悪い結果ならマイナスのスコアを与え、AIが何度も挑戦し、スコアを求めて進化します。
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/機械学習2.png" alt="欠点" align="left" width="30%">
+            人が定義する必要があるため人間より優れることはないと考察することができます。
+            <br clear="left">
+        </p>
+        <hr>
+        &nbsp;
+        <h3  id="5">ディープラーニング</h3>
+        <hr>
+        <p><img src="./pic/ディープラーニング.png" alt="タイトル" align="left" width="30%">
+            喋り(コメント返信)を担当しているディープラーニングについて説明します。
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/ディープラーニング1.png" alt="ディープラーニングについて" align="left" width="30%">
+            ディープラーニングは先ほど紹介した機械学習の一種です。
+            人間の脳みその構造を再現したもので、AIが特徴を自動的に定義する事ができます。
+            <br>
+            機械学習にはできない"自分で成長する"ということができます。
+            <br>
+            今回の例で上げたVtuberはGPT-3というディープラーニングで作られたAIを使用しています。
+            <br clear="left">
+        </p>
+        <hr>
+        &nbsp;
+        <h3 id="6">GPT-3  -強すぎるAI-</h3>
+        <hr>
+        <p><img src="./pic/gpt3-強すぎるai.png" alt="タイトル" align="left" width="30%">
+            GPT-3(Generative Pre-trained Transformer 3)
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/gpt3-強すぎるai1.png" alt="基礎知識" align="left" width="30%">
+            強すぎるAIとして現在話題沸騰中のGPT-3はOpenAIというイーロン・マスク氏筆頭に立ち上げられた非営利団体が開発・公開しています。
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/gpt3-強すぎるai2.png" alt="基礎知識" align="left" width="30%">
+            そんなGPT-3は文章生成AIという種類になります。
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/gpt3-強すぎるai4.png" alt="GPT-3のここがすごい" align="left" width="30%">
+            GPTのここがすごい！
+            <br>
+            OpenAIのアカウントがあれば誰でも利用可能！
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/gpt3-強すぎるai5.png" alt="GPT-3のここがすごい" align="left" width="30%">
+            100万ユーザーを5日で達成
+            <br>
+            みなさんが知っている大物サービスよりも大幅に短い時間で多くのユーザー数を獲得しています。
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/gpt3-強すぎるai6.png" alt="GPT-3のここがすごい" align="left" width="30%">
+            チャットをするような感覚で使える。
+            <br>
+            画面はとても見やすくシンプルで使いやすいデザイン。
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/gpt3-強すぎるai7.png" alt="GPT-3のここがすごい" align="left" width="30%">
+            できないことがないぐらいに賢い
+            <br>
+            GPT-3はとても多くのことができます。
+            <br>
+            会話はもちろん。作詞作曲。翻訳や要約プログラミングなどができます。
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/gpt3-強すぎるai8.png" alt="なぜ賢い？" align="left" width="30%">
+            ではなぜ文章生成AIであるGPT-3がここまで賢いのか
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/gpt3-強すぎるai9.png" alt="なぜ賢い？" align="left" width="30%">
+            GPT-3は45TBもの莫大なデータを学習しています。しかも現在も学習データは増え続けているというのです。
+            <br>
+            そして音楽系のサイトやプログラミングや論文などを学習しているため様々なことを行うことができます。
+            <br clear="left">
+        </p>
+        <hr>
+        &nbsp;
+        <h3 id="7">GPT-3  -脆弱性/欠点/問題点-</h3>
+        <hr>
+        <p><img src="./pic/GPT-3の欠点.png" alt="タイトル" align="left" width="30%">
+            GPT-3の脆弱性,欠点,問題点を紹介します
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/GPT-3の欠点2.png" alt="欠点" align="left" width="30%">
+            コストがかかる。GPT-3を1日維持するのに100万USD。日本円で約130億円かかるそうです。
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/GPT-3の欠点4.png" alt="欠点" align="left" width="30%">
+            GPT-3は文章を作るだけのAIのため、データの信憑性にかけます。基本的にGPT-3が言っていることは間違っていると考える方が良いでしょう。
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/GPT-3の欠点5.png" alt="欠点" align="left" width="30%">
+            試しに最新のiPhoneはなに？と聞くとデータが古いため、2020年のデータが返ってきました。
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/GPT-3の欠点6.png" alt="欠点" align="left" width="30%">
+            文章を確率的に生成しているため、言葉を選ぶことができません。
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/GPT-3の欠点7.png" alt="欠点" align="left" width="30%">
+            なので配信中に不適切な発言をし、このチャンネルはアカウント凍結しました。
+            <br clear="left">
+        </p>
+        <hr>
+        &nbsp;
+        <h3 id="8">AIの未来</h3>
+        <hr>
+        <p><img src="./pic/AIの未来.png" alt="タイトル" align="left" width="30%">
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/AIの未来1.png" alt="AIが人間を超えれない根本的な理由" align="left" width="30%">
+            AIが人間を超えれない根本的な理由が存在します。
+            <br>
+            それは、人工物なので自然な知能や感覚を持っていない。感情を理解、再現ができない。倫理的な判断ができなかったり、倫理的な質問に答えられない。などがあります。
+            <br clear="left">
+        </p>
+        <hr>
+        &nbsp;
+        <h3 id="9">まとめ</h3>
+        <hr>
+        <p><img src="./pic/まとめ.png" alt="タイトル" align="left" width="30%">
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/まとめ1.png" alt="まとめ" align="left" width="30%">
+            まとめ
+            <br>
+            賢いAIは存在しているが欠点が存在する。現時点での特化型AIは人間を超えることは不可能。
+            <br clear="left">
+        </p>
+        <hr>
+        &nbsp;
+        <h3 id="10">出典・引用元</h3>
+        <hr>
+        <p><img src="./pic/出典・引用元.png" alt="タイトル" align="left" width="30%">
+            <br clear="left">
+        </p>
+        <hr>
+        <p><img src="./pic/出典・引用元1.png" alt="タイトル" align="left" width="30%">
+            出典・引用元は次のとおりです。
+            以上で発表を終わります。
+            <br clear="left">
+        </p>
+        <hr>
+        &nbsp;
+        <h4 style="text-align: right;"><a href="./発表.pptx" download>ダウンロード</a></h4>
+
+
+
+
+
+
+
+        &nbsp;
+        <h2>出典・引用元</h2>
+        <h3>AIとは</h3>
+        <h4>・AIの例</h4>
+        <p>Siri ©Apple Inc. url:<a href="https://study.c1n.cc/link/siri" target="_blank">https://study.c1n.cc/link/siri</a></p>
+        <p>Google Assistant ©Google LLC url:<a href="https://study.c1n.cc/link/googleassistant" target="_blank">https://study.c1n.cc/link/googleassistant</a></p>
+        <p>DeepL ©DeepL GmbH url:<a href="https://study.c1n.cc/link/DeepL" target="_blank">https://study.c1n.cc/link/DeepL</a></p>
+        <p>AmazonGo ©Amazon.com, Inc. url:<a href="https://study.c1n.cc/link/AmazonGo" target="_blank">https://study.c1n.cc/link/AmazonGo</a></p>
+        <p>Amazon ©Amazon.com, Inc. url:<a href="https://study.c1n.cc/link/Amazon" target="_blank">https://study.c1n.cc/link/Amazon</a></p>
+        <p>YouTube ©Google LLC url:<a href="https://study.c1n.cc/link/YouTube" target="_blank">https://study.c1n.cc/link/YouTube</a></p>
+        <p>GoogleLens ©Google LLC url:<a href="https://study.c1n.cc/link/GoogleLens" target="_blank">https://study.c1n.cc/link/GoogleLes</a></p>
+        <h3>AIの活用例とその仕組み</h3>
+        <h4>・仕組み</h4>
+        <p>Neuro-sama ©Vedal987 url:<a href="https://study.c1n.cc/link/Neuro-sama" target="_blank">https://study.c1n.cc/link/Neuro-sama</a></p>
+        <h3>GPT-3 -強すぎるAI-</h3>
+        <h4>GPT-3のここがすごい！</h4>
+        <p>100万人達成主要サービス ©起業ログ url:<a href="https://study.c1n.cc/link/gpt-1m" target="_blank">https://study.c1n.cc/link/gpt-1m</a></p>
+        <p>Playground ©OpenAI Inc. url:<a href="https://study.c1n.cc/link/gpt-3" target="_blank">https://study.c1n.cc/link/gpt-3</a></p>
+        <h3>AIの未来</h3>
+        <h4>・AIの成長と人間の成長</h4>
+        <p>How AI Can Improve Human Decision-making ©MIT IDE url:<a href="https://study.c1n.cc/link/mit" target="_blank">https://study.c1n.cc/link/mit</a></p>
+        <p style="text-align: right;">リンクは短縮URLを使用しています。</p>
+
+        <h2>変更履歴</h2>
+        <h3>2月5日</h3>
+        <p><img src="./pic/cタイトル0205.png" alt="変更履歴" align="left" width="25%">
+            タイトルに名前を記入しました。
+            <a href="#1">タイトル</a>
+            <br clear="left">
+        </p>
+        <h3>2月6日</h3>
+        <p>様々なページで文章内容を変更</p>
+        <p><img src="./pic/dgpt3のここがすごい0206.png" alt="変更履歴" align="left" width="25%">
+            重複するコンテンツ
+            <a href="#6">GPT-3 -強すぎるAI-</a>
+            <br clear="left">
+        </p>
+        <p><img src="./pic/cディープラーニング0206.png" alt="変更履歴" align="left" width="25%">
+            注釈追加
+            <a href="#5">ディープラーニング</a>
+            <br clear="left">
+        </p>
+        <p><img src="./pic/dgptの欠点10206.png" alt="変更履歴" align="left" width="25%">
+            重複するコンテンツ
+            <a href="#7">GPT-3 -脆弱性/欠点/問題点-</a>
+            <br clear="left">
+        </p>
+        <p><img src="./pic/dgptの欠点20206.png" alt="変更履歴" align="left" width="25%">
+            必要なし判断
+            <a href="#7">GPT-3 -脆弱性/欠点/問題点-</a>
+            <br clear="left">
+        </p>
+        <p><img src="./pic/daiの未来10206.png" alt="変更履歴" align="left" width="25%">
+            必要なし判断
+            <a href="#8">AIの未来</a>
+            <br clear="left">
+        </p>
+        <p><img src="./pic/daiの未来20206.png" alt="変更履歴" align="left" width="25%">
+            必要なし判断
+            <a href="#8">AIの未来</a>
+            <br clear="left">
+        </p>
+        <p><img src="./pic/cまとめ0206.png" alt="変更履歴" align="left" width="25%">
+            内容変更による変更
+            <a href="#9">まとめ</a>
+            <br clear="left">
+        </p>
+
+        &nbsp;
+        <h2>このページについて</h2>
+        <p>コピー及び選択、保存、印刷が禁止されています。</p>
+        <p>©hiromu</p>
+    </div>
+    <div class="gotop">
+        <a href="#" id="page_top"><img src="./top.png" alt="top" style="max-width: 100%;"></a>
+    </div>
+</body>
+</html>
