@@ -1,0 +1,12 @@
+(function() {
+    window.addEventListener('DOMContentLoaded', function() {
+        var userkey = location.hostname === 'nerv.app' ? 'h8jDIgy8lIjywoC05FoBD1MSVtOdq60g' : 'vnWCALZ9CiAP35l93nNjUdpwvQkiULMF';
+        var script = document.createElement('script');
+        script.setAttribute('src', 'https://font.realtype.jp/api/script/v4');
+        script.setAttribute('data-rt-user', userkey);
+        script.setAttribute('data-rt-cache', true);
+        script.setAttribute('data-rt-layout', true);
+        script.setAttribute('data-rt-input', true);
+        document.body.appendChild(script);
+    });
+})();

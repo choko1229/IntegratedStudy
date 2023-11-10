@@ -1,0 +1,52 @@
+$(function () {
+  var slideCurrent = 0; 
+  var lastCurrent = $('.fade-list').length - 1; 
+  $('.fade-list').css('display', 'none'); 
+  $('.fade-list').eq(slideCurrent).css('display', 'block'); 
+  function changeslide() {
+    $('.fade-list').fadeOut(1000); 
+    $('.fade-list').eq(slideCurrent).fadeIn(1500); 
+    var pagiNation = slideCurrent + 1; 
+    $('.pagination-circle').removeClass('target');
+    $(".pagination-circle:nth-of-type(" + pagiNation + ")").addClass('target');
+  };
+  var Timer;
+  function startTimer() {
+    Timer = setInterval(function () { 
+      if (slideCurrent === lastCurrent) { 
+        slideCurrent = 0;
+        changeslide(); 
+      } else {
+        slideCurrent++;
+        changeslide(); 
+      };
+    }, 5000); // 上記動作を5秒毎に
+  }
+  function stopTimer() {
+    clearInterval(Timer); 
+  }
+  startTimer();
+  $('.js-btn-next').click(function () {
+    stopTimer();
+    startTimer();
+    if (slideCurrent === lastCurrent) { 
+      slideCurrent = 0;
+      changeslide(); 
+    } else {
+      slideCurrent++;
+      changeslide(); 
+    };
+  });
+  // BACKボタン
+  $('.js-btn-back').click(function () {
+    stopTimer();
+    startTimer();
+    if (slideCurrent === 0) { 
+      slideCurrent = lastCurrent;
+      changeslide(); 
+    } else {
+      slideCurrent--;
+      changeslide();
+    };
+  });
+});
