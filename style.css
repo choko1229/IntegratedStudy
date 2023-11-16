@@ -6,6 +6,9 @@ a{
     text-decoration: none;
     color:inherit
 }
+img{
+    display:block;
+  }
 header{
     position: fixed;
     top: 0;
@@ -87,9 +90,9 @@ header{
 .contents-text {
     margin-top: 45px;
     margin-left: 15px;
+    margin-bottom: 40px;
     color: #000000;
     background-color:#202020;
-    width:100%;
 }
 .contents-text h1{
     color: #cccccc;
@@ -123,6 +126,16 @@ header{
     color: #4daafb;
     text-decoration: none;
     font-size: 13px;
+}
+.code{
+    border-radius: 10px;
+    margin: 0   ;
+    background-color: #2a2d31;
+    border: 0px solid #2a2d31;
+    width: 80%;
+}
+.code-text{
+
 }
 .listicon{
     font-size: 26px;
