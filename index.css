@@ -48,8 +48,15 @@ a{
     position: relative;
     bottom: 100px;
 }
+.description{
+    text-align: center;
+    position: relative;
+    font-size: 23px;
+    bottom: 150px;
+}
 .button{
     position: relative;
+    bottom: 15px;
     width: 75px;
     height: 75px;
     display: block;
