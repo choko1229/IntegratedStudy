@@ -1,8 +1,13 @@
+@font-face {
+	font-family: 'MyFont';
+	src: url(/font/LINESeedJP_A_TTF_Rg.ttf);
+}
 body{
     margin: 0;
     padding: 0;
     height: 100vh;
     overflow: hidden;
+    font-family: MyFont;
 }  
 .background-container {
     width: 100%;
