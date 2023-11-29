@@ -3,5 +3,5 @@ setTimeout(function () {
     document.getElementById('footer').classList.add('moved');
     setTimeout(function () {
         document.getElementById('footer').classList.remove('moved');
-    }, 1000); // 1秒後に元に戻す
-}, 1000); // 1秒後にスタイル変更を適用
+    }, 3000); // 1秒後に元に戻す
+}, 3000); // 1秒後にスタイル変更を適用
