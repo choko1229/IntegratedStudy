@@ -1,51 +1,77 @@
 @media screen and (min-width: 700px) {
-    .profile{
+    .profile {
         font-size: 30px;
     }
-    .description{
+
+    .description {
         font-size: 23px;
     }
-    .icon{
+
+    .icon {
         font-size: 350%;
     }
-    .button{
+
+    .button {
         display: block;
     }
-    .bottom{
+
+    .bottom {
         display: flex;
     }
-    .link-button{
+
+    .link-button {
         display: none;
     }
+
     .card {
         width: 70%;
         height: 50%;
     }
 }
+
 @media screen and (max-width: 700px) {
-    .usericon{
+    .usericon {
         height: 300px;
     }
-    .profile{
+
+    .profile {
         font-size: 25px;
     }
-    .description{
+
+    .description {
         font-size: 15px;
     }
-    .icon{
+
+    .icon {
         font-size: 150%;
     }
-    .link-bottom{
+
+    .link-bottom {
         display: none;
     }
-    .link-button{
+
+    .link-button {
         display: flex;
     }
+
     .card {
         width: 70%;
         height: 35%;
     }
 }
+
+@media screen and (min-height: 800px) {
+    .link-button a {
+        bottom: 40px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .link-button a {
+        bottom: 20px;
+    }
+}
+
 
 @font-face {
     font-family: 'MyFont';
@@ -169,14 +195,15 @@ footer {
     color: #fafafa;
     font-size: 20px;
 }
-.link-button{
+
+.link-button {
     color: #fafafa;
     width: 100%;
 }
-.link-button a{
+
+.link-button a {
     width: 100%;
     text-align: center;
     position: relative;
-    bottom: 40px;
     font-size: 20px;
 }
