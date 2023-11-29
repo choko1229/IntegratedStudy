@@ -331,7 +331,9 @@ footer {
     position: fixed;
     bottom: 0;
 }
-
+footer.leaving{
+    background-color: #0078d3;
+}
 .ficon1 {
     width: 35px;
     background-color: #0078d3;
