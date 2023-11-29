@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,18 +23,25 @@
     requestFullscreen(elem);
   }
 </script>
+
 <body>
   <header>
     <div class="mid">
       <div class="macbutton">
-        <p style="display: inline;color: #fe5f57;"><a href="./">⚫︎</a></p><p style="display: inline;color: #555555;">⚫︎</p><p style="display: inline;color: #2ac840;"><a href="#" id="fullScreenButton" onclick="openFullscreen();">⚫︎</a></p>
+        <p style="display: inline;color: #fe5f57;"><a href="./">⚫︎</a></p>
+        <p style="display: inline;color: #555555;">⚫︎</p>
+        <p style="display: inline;color: #2ac840;"><a href="#" id="fullScreenButton" onclick="openFullscreen();">⚫︎</a>
+        </p>
       </div>
       <div class="arrow">
-        <span class="material-symbols-outlined"><a href="#" onclick="window.history.go(-1); return false;">arrow_back</a></span>
-        <span class="material-symbols-outlined"><a href="#" onclick="window.history.go(1); return false;">arrow_forward</a></span>
+        <span class="material-symbols-outlined"><a href="#"
+            onclick="window.history.go(-1); return false;">arrow_back</a></span>
+        <span class="material-symbols-outlined"><a href="#"
+            onclick="window.history.go(1); return false;">arrow_forward</a></span>
       </div>
       <div class="search">
-        <span class="material-symbols-outlined search-icon">search</span><h1 class="title">ホーム</h1>
+        <span class="material-symbols-outlined search-icon">search</span>
+        <h1 class="title">ホーム</h1>
       </div>
     </div>
   </header>
@@ -62,16 +70,27 @@
         <div class="tab2">
         </div>
       </div>
-      <div class="contents-text" style="margin-top: 180px;margin-left: 200px;">
+      <div class="margin contents-text">
         <h1>ポートフォリオページ</h1>
         <h2>高校３年間成果物</h2>
-        <br><br>
+        <br>
+        <div class="caution">
+          <h3>推奨解像度よりの低いです。</h3>
+          <p>現在閲覧している端末は推奨解像度よりも小さいディスプレイです。</p>
+          <p>解像度が低いと一部閲覧に支障が発生します。</p>
+          <p>推奨解像度:横幅800px以上</p>
+          <p>例:PC/タブレット</p>
+        </div>
+        <br>
         <h3>成果物一覧表</h3>
-        <p style="margin-top: 5px;"><a href="./code"><span class="material-symbols-outlined listicon">code</span>自作サイト</a></p>
+        <p style="margin-top: 5px;"><a href="./code"><span
+              class="material-symbols-outlined listicon">code</span>自作サイト</a></p>
         <p><a href="./code"><span class="material-symbols-outlined listicon">web</span>wordpressサイト</a></p>
         <p><a href="./document"><span class="material-symbols-outlined listicon">description</span>パンフレット等の掲示物</a></p>
-        <p><a href="./video"><span class="material-symbols-outlined listicon">smart_display</span><a href="./video">動画</a></p>
-        <p><a href="./other"><span class="material-symbols-outlined listicon">more_horiz</span><a href="./other">その他</a></p>
+        <p><a href="./video"><span class="material-symbols-outlined listicon">smart_display</span><a
+              href="./video">動画</a></p>
+        <p><a href="./other"><span class="material-symbols-outlined listicon">more_horiz</span><a href="./other">その他</a>
+        </p>
         <br>
         <h3>このページについて</h3>
         <p>探求の時間で過去に作ったものをまとめていたのを<a href="https://code.visualstudio.com/">VScode</a>風にまとめてみました。</p>
@@ -92,4 +111,5 @@
     </div>
   </footer>
 </body>
+
 </html>

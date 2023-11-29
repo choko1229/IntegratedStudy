@@ -1,3 +1,62 @@
+@media screen and (min-width: 1000px) {
+    .margin{
+        margin-top: 180px;
+        margin-left: 200px;
+}
+}
+
+@media screen and (max-width: 1000px) {
+    .margin{
+        padding-top: 35px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 10%;
+        margin-left: 10%;
+}
+}
+
+@media screen and (min-width: 500px) {
+    .macbutton {
+        display: inline-block;
+    }
+
+    .search {
+        width: 50%;
+    }
+
+    .contents {
+        margin-left: 312px;
+    }
+
+    .caution {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .macbutton {
+        display: none;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .search {
+        width: 100%;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .sub-sidebar {
+        display: none;
+    }
+
+    .contents {
+        margin-left: 61px;
+    }
+}
+
 @font-face {
     font-family: 'MyFont';
     src: url(/font/LINESeedJP_A_TTF_Rg.ttf);
@@ -34,7 +93,6 @@ header {
 }
 
 .macbutton {
-    display: inline-block;
     width: 25%;
     margin: 3px;
     margin-left: 7px;
@@ -50,7 +108,6 @@ header {
 
 .search {
     text-align: center;
-    width: 50%;
     margin-bottom: 10px;
     margin-top: 4px;
     border-radius: 5px;
@@ -104,14 +161,11 @@ header {
 }
 
 .contents {
-    margin-left: 312px;
     background-color: #202020;
     width: 100%;
 }
 
 .contents-text {
-    margin-top: 45px;
-    margin-left: 15px;
     margin-bottom: 40px;
     color: #000000;
     background-color: #202020;
@@ -247,6 +301,7 @@ footer {
 .copyright-text {
     margin: 0;
     margin-top: 1.6px;
+    width: 200px;
     color: #cccccc;
     font-size: 13px;
     margin-left: 5px;
