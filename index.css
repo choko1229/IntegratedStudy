@@ -108,9 +108,10 @@ a {
 }
 
 .card {
-    background-color: #e1e1e181;
+    background-color: #e1e1e15a;
     box-shadow: 0 40px 60px #00000039;
     border-radius: 30px;
+    backdrop-filter: blur(5px);
 }
 
 .top {
