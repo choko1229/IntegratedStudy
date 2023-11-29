@@ -19,6 +19,39 @@
     .contents {
         margin-left: 312px;
     }
+
+    .caution {
+        display: none;
+    }
+
+    .contents-text h1 {
+        margin-top: -5px;
+        margin-bottom: -5px;
+        font-size: 35px;
+    }
+
+    .contents-text h2 {
+        margin-top: -5px;
+        margin-bottom: -5px;
+        font-size: 25px;
+    }
+
+    .contents-text h3 {
+        margin-top: -5px;
+        margin-bottom: -2px;
+        font-size: 20px;
+    }
+
+    .contents-text p {
+        margin: 0px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        font-size: 13px;
+    }
+
+    .contents-text a {
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width: 651px) {
@@ -28,6 +61,34 @@
 
     .contents {
         margin-left: 61px;
+    }
+    .contents-text h1 {
+        margin-top: -5px;
+        margin-bottom: -5px;
+        font-size: 28px;
+    }
+
+    .contents-text h2 {
+        margin-top: -5px;
+        margin-bottom: -5px;
+        font-size: 20px;
+    }
+
+    .contents-text h3 {
+        margin-top: -5px;
+        margin-bottom: -2px;
+        font-size: 15px;
+    }
+
+    .contents-text p {
+        margin: 0px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        font-size: 12px;
+    }
+
+    .contents-text a {
+        font-size: 12px;
     }
 }
 
@@ -41,9 +102,7 @@
     }
 
 
-    .caution {
-        display: none;
-    }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -183,39 +242,25 @@ header {
 .contents-text h1 {
     color: #cccccc;
     font-weight: 200;
-    margin-top: -5px;
-    margin-bottom: -5px;
-    font-size: 35px;
 }
 
 .contents-text h2 {
     color: #9d9d9d;
     font-weight: 200;
-    margin-top: -5px;
-    margin-bottom: -5px;
-    font-size: 25px;
 }
 
 .contents-text h3 {
     color: #cccccc;
     font-weight: 200;
-    margin-top: -5px;
-    margin-bottom: -2px;
-    font-size: 20px;
 }
 
 .contents-text p {
     color: #bfbfbf;
-    margin: 0px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    font-size: 13px;
 }
 
 .contents-text a {
     color: #4daafb;
     text-decoration: none;
-    font-size: 13px;
 }
 
 .code {
