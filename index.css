@@ -1,14 +1,65 @@
-@font-face {
-	font-family: 'MyFont';
-	src: url(/font/LINESeedJP_A_TTF_Rg.ttf);
+@media screen and (min-width: 700px) {
+    .profile{
+        font-size: 30px;
+    }
+    .description{
+        font-size: 23px;
+    }
+    .icon{
+        font-size: 350%;
+    }
+    .button{
+        display: block;
+    }
+    .bottom{
+        display: flex;
+    }
+    .link-button{
+        display: none;
+    }
+    .card {
+        width: 70%;
+        height: 50%;
+    }
 }
-body{
+@media screen and (max-width: 700px) {
+    .usericon{
+        height: 300px;
+    }
+    .profile{
+        font-size: 25px;
+    }
+    .description{
+        font-size: 15px;
+    }
+    .icon{
+        font-size: 150%;
+    }
+    .link-bottom{
+        display: none;
+    }
+    .link-button{
+        display: flex;
+    }
+    .card {
+        width: 70%;
+        height: 35%;
+    }
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url(/font/LINESeedJP_A_TTF_Rg.ttf);
+}
+
+body {
     margin: 0;
     padding: 0;
     height: 100vh;
     overflow: hidden;
     font-family: MyFont;
-}  
+}
+
 .background-container {
     width: 100%;
     height: 100%;
@@ -16,55 +67,58 @@ body{
     background-position: center;
     transition: background-image 1s ease-in-out;
 }
-a{
+
+a {
     text-decoration: none;
-    color:inherit
+    color: inherit
 }
-.contents{
+
+.contents {
     display: flex;
     height: 100%;
     justify-content: center;
     align-items: center;
 }
-.card{
+
+.card {
     background-color: #e1e1e181;
     box-shadow: 0 40px 60px #00000039;
     border-radius: 30px;
-    width: 70%;
-    height: 50%;
 }
-.top{
-    display:flex;
+
+.top {
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 80%;
 }
-.bottom{
-    display:flex;
+
+.bottom {
     justify-content: center;
     align-items: center;
 }
-.profile{
+
+.profile {
     color: #fafafa;
-    font-size: 30px;
 }
-.name{
+
+.name {
     text-align: center;
     position: relative;
     bottom: 100px;
 }
-.description{
+
+.description {
     text-align: center;
     position: relative;
-    font-size: 23px;
     bottom: 150px;
 }
-.button{
+
+.button {
     position: relative;
-    bottom: 15px;
     width: 75px;
     height: 75px;
-    display: block;
+    bottom: 15px;
     text-align: center;
     margin: 0 10px;
     border-radius: 50%;
@@ -75,25 +129,28 @@ a{
     background: linear-gradient(0deg, #dddddd, #ffffff);
     transition: all 5s;
 }
-.button:hover{
+
+.button:hover {
     background: linear-gradient(0deg, #0e123b, #000000);
-    .icon{
+
+    .icon {
         color: #FFFFFF;
     }
 }
-.icon{
+
+.icon {
     position: relative;
     top: 25px;
-    font-size: 350%;
     color: #0e123b;
     transition: all 1.25s;
     font-variation-settings:
-    'FILL' 0,
-    'wght' 300,
-    'GRAD' 0,
-    'opsz' 24
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24
 }
-footer{
+
+footer {
     position: fixed;
     bottom: 0px;
     right: 0px;
@@ -102,11 +159,24 @@ footer{
     text-align: right;
     color: #e1e1e181;
 }
-.marusan{
+
+.marusan {
     color: #e1e1e181;
     transition: all 1s;
 }
-.marusan:hover{
+
+.marusan:hover {
     color: #fafafa;
+    font-size: 20px;
+}
+.link-button{
+    color: #fafafa;
+    width: 100%;
+}
+.link-button a{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 40px;
     font-size: 20px;
 }
