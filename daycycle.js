@@ -15,19 +15,19 @@ document.addEventListener("DOMContentLoaded", function () {
     // 時間と曜日に基づいて背景を設定する
     if (currentDay >= 1 && currentDay <= 5) { // 月曜日から金曜日(平日)
       if (currentHour >= 7 && currentHour < 16) { // 昼の時間(7時~16時)
-        backgroundImage = "url('./img/school/schoolday.jpg')";
+        backgroundImage = "url('./img/school/schoolday.webp')";
       } else if (currentHour >= 16 && currentHour < 19) { // 夕方の時間(16時~19時)
-        backgroundImage = "url('./img/school/evening.jpg')";
+        backgroundImage = "url('./img/school/evening.webp')";
       } else { // 夜の時間(19時~7時)
-        backgroundImage = "url('./img/school/night.jpg')";
+        backgroundImage = "url('./img/school/night.webp')";
       }
     } else { // 土曜日と日曜日
       if (currentHour >= 7 && currentHour < 16) { // 昼の時間(7時~16時)
-        backgroundImage = "url('./img/school/noon.jpg')";
+        backgroundImage = "url('./img/school/noon.webp')";
       } else if (currentHour >= 16 && currentHour < 19) { // 夕方の時間(16時~19時)
-        backgroundImage = "url('./img/school/evening.jpg')";
+        backgroundImage = "url('./img/school/evening.webp')";
       } else { // 夜の時間(19時~7時)
-        backgroundImage = "url('./img/school/night.jpg')";
+        backgroundImage = "url('./img/school/night.webp')";
       }
     }
   
