@@ -1,0 +1,89 @@
+$(function(){
+  'use scrict';
+
+  //プレイヤー変数
+  var player;
+
+  //オブジェクト生成
+  function youtubeAPIInit(videoId, subtitles) {
+    var scriptTag = document.createElement('script');
+    scriptTag.src = "https://www.youtube.com/iframe_api";
+    var fsTag = document.getElementsByTagName('script')[0];
+    fsTag.parentNode.insertBefore(scriptTag, fsTag);
+    window.onYouTubeIframeAPIReady = function(){
+      player = new YT.Player('player', {
+        height:'540',
+        width:'960',
+        videoId:videoId,
+        playerVars:{
+          autohide:1,
+          controls:1,
+          modestbranding:1,
+          iv_load_policy:3,
+          showinfo:0,
+          rel:0,
+          autoplay:1,
+          cc_load_policy:subtitles ? 1 : 0,
+          cc_lang_pref:window.location.pathname === '/en/' ? 'en' : 'ja'
+        }
+      });
+    };
+  }
+
+  function play(videoId) {
+    if (!player) {
+      youtubeAPIInit(videoId);
+    } else {
+      player.loadVideoById(videoId);
+    }
+  }
+
+  //モーダル
+  var modal = {}, $lay, $content;
+  modal.inner = function(videoId) {
+    if($("#modal-overlay")[0]) return false;
+    $("body").append('<div id="modal-overlay"></div>');
+    $lay = $("#modal-overlay");
+    $content = $("#modal-content");
+    $lay.fadeIn("slow");
+    play(videoId);
+    this.resize();
+    $content.fadeIn("fast");
+    $lay.unbind().click(function() {
+      player.pauseVideo();
+      $content.add($lay).fadeOut("fast",function(){
+        $lay.remove();
+      });
+    });
+  };
+
+  //リサイズ処理
+  modal.resize = function(){
+    var $winWidth = $(window).width();
+    var $winHeight = $(window).height();
+    var $contentOuterWidth = $("#modal-content").outerWidth();
+    var $contentOuterHeight = $("#modal-content").outerHeight();
+    $("#modal-content").css({
+      "left": (($winWidth - $contentOuterWidth) / 2) + "px",
+      "top": (($winHeight - $contentOuterHeight) / 2) + "px"
+    });
+  }
+
+  //クリック処理
+  $("#movie01").click(function(){
+    modal.inner('O5gGspQeFdg');
+  });
+  $("#movie02").click(function(){
+    modal.inner('O27aHl-w9M4');
+  });
+  $("#movie03").click(function(){
+    modal.inner('Yut4wHJfM5g');
+  });
+  $("#movie04").click(function(){
+    modal.inner('RG6zz0oNFDc');
+  });
+  $("#movie05").click(function(){
+    modal.inner('_UK3AA7c8fA', true);
+  });
+  $(window).resize(modal.resize);
+});

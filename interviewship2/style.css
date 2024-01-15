@@ -1,0 +1,65 @@
+@media (prefers-color-scheme: dark) {
+    .custom-shape-divider-bottom-1676652217 .shape-fill {
+        fill: #23272A;
+    }
+    .full {
+        background: linear-gradient(-23deg , #5865F2, #404EED);    
+    }
+}
+    
+@media (prefers-color-scheme: light) {
+    .custom-shape-divider-bottom-1676652217 .shape-fill {
+        fill: #FFFFFF;
+    }
+    .full {
+        background: linear-gradient(-23deg ,#6e58ff, #70f0fc);    
+    }
+}
+
+.custom-shape-divider-bottom-1676652217 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1676652217 svg {
+    position: relative;
+    display: block;
+    width: calc(180% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+font-face {
+    font-family: 'LineSeed';
+    src:url('/font/LINESeedJP_TTF_Rg.ttf') format('truetype');
+}  
+
+body {
+    font-family: 'LineSeed';
+    font-size: 1.6rem;
+    margin:0px;
+}
+
+div {
+    width: 100%;
+}
+
+.full {
+    width: 100%;
+    min-height: 100vh;
+}
+
+section {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 5vw;
+  font-family: "Montserrat", sans-serif;
+}
