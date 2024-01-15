@@ -1,0 +1,146 @@
+ダウンロード開始：2023/11/13 17:59:37
+
+● https://hankousai.com/notification/2023/08/30 から D:\\hankousai.com\notification\2023\08\30 へ
+
+index.html （"[default]" から変更）
+
+● https://hankousai.com/display から D:\\hankousai.com\display へ
+
+index.html （"[default]" から変更）
+
+● https://hankousai.com/notification/author/choko1229 から D:\\hankousai.com\notification\author\choko1229 へ
+
+index.html （"[default]" から変更）
+
+● https://hankousai.com/highlight から D:\\hankousai.com\highlight へ
+
+index.html （"[default]" から変更）
+
+● https://hankousai.com/notification から D:\\hankousai.com\notification へ
+
+index.html （"[default]" から変更）
+
+● https://hankousai.com/stage から D:\\hankousai.com\stage へ
+
+index.html （"[default]" から変更）
+
+● https://hankousai.com/notification/%e3%83%9b%e3%83%bc%e3%83%a0%e3%83%9a%e3%83%bc%e3%82%b8%e5%88%b6%e4%bd%9c%e9%96%8b%e5%a7%8b から D:\\hankousai.com\notification\ホームページ制作開始 へ
+
+index.html （"[default]" から変更）
+
+● https://hankousai.com から D:\\hankousai.com へ
+
+Prsd_xmlrpc.xml （"xmlrpc.php?rsd" から変更）
+index.html （"[default]" から変更）
+
+● https://hankousai.com/notification/category/uncategorized から D:\\hankousai.com\notification\category\uncategorized へ
+
+index.html （"[default]" から変更）
+
+● https://hankousai.com/wp-json から D:\\hankousai.com\wp-json へ
+
+エラー（404 Not Found）：default.json
+
+● https://hankousai.com/wp-json/wp/v2/pages から D:\\hankousai.com\wp-json\wp\v2\pages へ
+
+396
+399
+375
+244
+
+● https://hankousai.com/wp-json/wp/v2/posts から D:\\hankousai.com\wp-json\wp\v2\posts へ
+
+286
+
+● https://hankousai.com/wp-json/wp/v2/users から D:\\hankousai.com\wp-json\wp\v2\users へ
+
+1
+
+● https://hankousai.com/wp-json/wp/v2/categories から D:\\hankousai.com\wp-json\wp\v2\categories へ
+
+1
+
+● https://hankousai.com/feed から D:\\hankousai.com\feed へ
+
+エラー（404 Not Found）：default.xml
+
+● https://hankousai.com/comments/feed から D:\\hankousai.com\comments\feed へ
+
+エラー（404 Not Found）：default.xml
+
+● https://hankousai.com/notification/%e3%83%9b%e3%83%bc%e3%83%a0%e3%83%9a%e3%83%bc%e3%82%b8%e5%88%b6%e4%bd%9c%e9%96%8b%e5%a7%8b/feed から D:\\hankousai.com\notification\ホームページ制作開始\feed へ
+
+エラー（404 Not Found）：default.xml
+
+● https://hankousai.com/notification/author/choko1229/feed から D:\\hankousai.com\notification\author\choko1229\feed へ
+
+エラー（404 Not Found）：default.xml
+
+● https://hankousai.com/notification/category/uncategorized/feed から D:\\hankousai.com\notification\category\uncategorized\feed へ
+
+エラー（404 Not Found）：default.xml
+
+● https://hankousai.com/wp-content/plugins/kubio/lib/shapes/header-shapes から D:\\hankousai.com\wp-content\plugins\kubio\lib\shapes\header-shapes へ
+
+waves-inverted.png
+waves.png
+two-circles.png
+rounded-squares-blue.png
+right-tilted-strips.png
+right-tilted-lines.png
+many-rounded-squares-blue.png
+left-tilted-lines.png
+dots.png
+circles-white-gradient.png
+circles-gradient.png
+circles-3.png
+circles-2.png
+circles.png
+10degree-stripes.png
+
+● https://hankousai.com/wp-json/o から D:\\hankousai.com\wp-json\o へ
+
+embedPurl=httpsWJJhankousai.comJstageJ& （"embed?url=https%3A%2F%2Fhankousai.com%2Fstage%2F&" から変更）
+embedPurl=httpsWJJhankousai.comJstageJ （"embed?url=https%3A%2F%2Fhankousai.com%2Fstage%2F" から変更）
+embedPurl=httpsWJJhankousai.comJnotificationJホームページ制作開始J& （"embed?url=https%3A%2F%2Fhankousai.com%2Fnotification%2F%25e3%2583%259b%25e3%2583%25bc%25e3%2583%25a0%25e3%2583%259a%25e3%2583%25bc%25e3%2582%25b8%25e5%2588%25b6%25e4%25bd%259c%25e9%2596%258b%25e5%25a7%258b%2F&" から変更）
+embedPurl=httpsWJJhankousai.comJnotificationJホームページ制作開始J （"embed?url=https%3A%2F%2Fhankousai.com%2Fnotification%2F%25e3%2583%259b%25e3%2583%25bc%25e3%2583%25a0%25e3%2583%259a%25e3%2583%25bc%25e3%2582%25b8%25e5%2588%25b6%25e4%25bd%259c%25e9%2596%258b%25e5%25a7%258b%2F" から変更）
+embedPurl=httpsWJJhankousai.comJhighlightJ& （"embed?url=https%3A%2F%2Fhankousai.com%2Fhighlight%2F&" から変更）
+embedPurl=httpsWJJhankousai.comJhighlightJ （"embed?url=https%3A%2F%2Fhankousai.com%2Fhighlight%2F" から変更）
+embedPurl=httpsWJJhankousai.comJdisplayJ& （"embed?url=https%3A%2F%2Fhankousai.com%2Fdisplay%2F&" から変更）
+embedPurl=httpsWJJhankousai.comJdisplayJ （"embed?url=https%3A%2F%2Fhankousai.com%2Fdisplay%2F" から変更）
+embedPurl=httpsWJJhankousai.comJ& （"embed?url=https%3A%2F%2Fhankousai.com%2F&" から変更）
+embedPurl=httpsWJJhankousai.comJ （"embed?url=https%3A%2F%2Fhankousai.com%2F" から変更）
+
+● https://hankousai.com/wp-content/themes/zeka/resources/theme から D:\\hankousai.com\wp-content\themes\zeka\resources\theme へ
+
+fse-base-style.cssPver=1.0.7 （"fse-base-style.css?ver=1.0.7" から変更）
+
+● https://hankousai.com/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-image-cdn/dist から D:\\hankousai.com\wp-content\plugins\jetpack\jetpack_vendor\automattic\jetpack-image-cdn\dist へ
+
+Pminify=false&ver=132249e245926ae3e188_image-cdn.js （"image-cdn.js?minify=false&ver=132249e245926ae3e188" から変更）
+
+● https://hankousai.com/wp-content/uploads/2023/08 から D:\\hankousai.com\wp-content\uploads\2023\08 へ
+
+IMG_3498.png
+
+● https://hankousai.com/wp-content/plugins/kubio/build/scripts から D:\\hankousai.com\wp-content\plugins\kubio\build\scripts へ
+
+Pver=494ef51a8c5562fa000c_index.js （"index.js?ver=494ef51a8c5562fa000c" から変更）
+
+● https://hankousai.com/wp-content/plugins/kubio/build/frontend から D:\\hankousai.com\wp-content\plugins\kubio\build\frontend へ
+
+Pver=b8e4bee99323771c345e_index.js （"index.js?ver=b8e4bee99323771c345e" から変更）
+
+● https://hankousai.com/wp-content/plugins/kubio/build/block-library から D:\\hankousai.com\wp-content\plugins\kubio\build\block-library へ
+
+Pver=1699530625_style.css （"style.css?ver=1699530625" から変更）
+
+● https://hankousai.com/wp-content/plugins/kubio/build/third-party-blocks から D:\\hankousai.com\wp-content\plugins\kubio\build\third-party-blocks へ
+
+Pver=1699530625_style.css （"style.css?ver=1699530625" から変更）
+
+ダウンロード完了：2023/11/13 17:59:51
+
+ダウンロード予定数：55
+ダウンロード総数：49
+エラー数：6

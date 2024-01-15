@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/googleicon.css">
+    <link rel="shortcut icon" href="/img/icon/icon.png" type="image/x-icon">
+    <title>ポートフォリオ｜code</title>
+</head>
+
+<body>
+    <!--PC用のヘッダー-->
+    <header class="header-pc">
+        <div class="line-up">
+            <div class="title">
+                <a href="/home">
+                    <p class="titleja">ポートフォリオ</p>
+                    <p class="titleeng">hiromu.me</p>
+                </a>
+            </div>
+            <div class="line-up list">
+                <li><a class="menu" href="/">ホーム</a></li>
+                <li><a class="menu" href="/レポート">レポート</a></li>
+                <li><a class="menu" href="/code">自作サイト</a></li>
+                <li><a class="menu" href="/profile">プロフィール</a></li>
+            </div>
+        </div>
+    </header>
+    <!--モバイル用のヘッダー-->
+    <header class="header-mobile">
+        <div class="line-up">
+            <div class="title">
+                <a href="/home">
+                    <p class="titleja">ポートフォリオ</p>
+                    <p class="titleeng">hiromu.me</p>
+                </a>
+            </div>
+            <!-- ハンバーガーメニュー部分 -->
+            <div class="nav">
+
+                <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                <input id="drawer_input" class="drawer_hidden" type="checkbox">
+
+                <!-- ハンバーガーアイコン -->
+                <label for="drawer_input" class="drawer_open"><span></span></label>
+
+                <!-- メニュー -->
+                <nav class="nav_content">
+                    <ul class="nav_list">
+                        <li><a class="nav_item menu" href="/">ホーム</a></li>
+                        <li><a class="nav_item menu" href="/レポート">レポート</a></li>
+                        <li><a class="nav_item menu" href="/code">自作サイト</a></li>
+                        <li><a class="nav_item menu" href="/profile">プロフィール</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+
+    <div class="contents">
+        <h2>自作サイト</h2>
+        <br>
+        <h3>HTMLやCSSなどのコードを用いたサイト</h3>
+        <br><br>
+        <h2>インタビューシップ成果発表ページ</h2>
+        <br>
+        <p>インタビューシップ成果発表ページは、学習成果発表会とインタビューシップ研究会の2回作成しました。</p>
+        <img src="/img/thumbnail/interviewship1.png" style="width: 50%;max-width: 500px;" alt="">
+        <img src="/img/thumbnail/interviewship2.png" style="width: 50%;max-width: 500px;" alt="">
+        <br>
+        <h3>成果物</h3>
+        <p>現在制作したページを閲覧することができます。</p>
+        <p><a href="/interviewship1/">学習成果発表会時に公開したページ</a></p>
+        <p><a href="/interviewship2/">インタビューシップ研究会時に公開したページ</a></p>
+        <br>
+        <h3>制作の注意点</h3>
+        <p>このページの制作にあたっては、情報セキュリティを重視しました。ページの特性上生徒の氏名や訪問先の企業などが載っており、誰もが見れる状態にしておくことが好ましくありませんでした。</p>
+        <p>ページとしてはシンプルでindex.htmlにアクセスしてログイン画面を表示します。パスワードを入力させ、{入力}.htmlにアクセスします。一致したらreport/index.htmlにページ移管する。また、間違っていた場合は404エラーでパスワード入力画面まで戻します。</p>
+        <img src="/img/powerpoint/暗号化学習成果発表会.png" style="width: 100%;max-width: 500px;" alt="">
+        <img src="/img/powerpoint/暗号化学習成果発表会エラー.png" style="width: 100%;max-width: 500px;" alt="">
+        <p>このページには重大な脆弱性が存在します。</p>
+        <p>それはレポートが存在するページのURIを直接入力されるとパスワードを入力せずともアクセスできてしまうという欠陥でした。</p>
+        <img src="/img/powerpoint/暗号化学習成果発表会脆弱性.png" style="width: 100%;max-width: 500px;" alt="">
+        <p>その欠陥を解決するためにインタビューシップ研究会の時に公開したページではBasic認証を採用したページを作成しました。</p>
+        <p>Basic認証を使用することで直接URIを入力されてもIDとパスワードを求めるようにすることができました。</p>
+        <img src="/img/powerpoint/暗号化インタビューシップ研究会ベーシック.png" style="width: 100%;max-width: 500px;" alt="">
+        <img src="/img/powerpoint/Basic認証.gif" style="width: 100%;max-width: 500px;" alt="">
+        <br><br><br>
+        <h2>丸亀にぎわいプロジェクト</h2>
+        <br>
+        <p>丸亀にぎわいプロジェクトの活動報告の時にウェブサイトを作成しようと試みました。未完成品です。</p>
+        <img src="/img/thumbnail/mnp.png" style="width: 50%;max-width: 500px;" alt="">
+        <br>
+        <h3>成果物</h3>
+        <p>現在制作したページを閲覧することができます。</p>
+        <p><a href="/mnp/">チームめしやま</a></p>
+    </div>
+    <!--フッター-->
+    <footer>
+        <div class="line-up">
+            <p class="copyright">&copy; 2024 gougi hiromu</p>
+            <p class="create hide400"><a class="menu hide400" href="/url?page=https://github.com/choko1229/IntegratedStudy">Hosting by GitHub</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

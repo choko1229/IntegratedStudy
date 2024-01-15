@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>インタビューシップ | パスワード</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="./style.css" >
+    <link rel="stylesheet" href="./header.css">
+    <script language="JavaScript" type="text/javascript">
+        function nextPage(){
+               pwd=document.form1.pass.value;
+               location.href=pwd+".html";
+        }
+    </script>
+</head>
+<nav class="navbar">
+    <a href="https://www.kagawa-edu.jp/hanznh02/" class="logo"><p style="font-size: 30px;">香川県立飯山高等学校
+    </p></a>
+    <input type="checkbox" id="toggler">
+    <label for="toggler"><i class="ri-menu-line"></i></label>
+    <div class="menu">
+     <ul class="list">
+     </ul>
+    </div>
+   </nav>
+
+
+<body>
+    <div>
+        <div class="container">
+            &emsp;
+            <div class="panel">
+                <h2>パスワード保護</h2>
+                <p>本ページはパスワードで保護されています。</p>
+                <p>配布されたパスワードを確認してください。</p>
+                <p><a href="./hanzan.html">ログインしたことにする。</a></p>
+                <form name="form1">
+                    <input type="text" name="pass">
+                    <input type="button" value="パスワード" onClick="nextPage();">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
