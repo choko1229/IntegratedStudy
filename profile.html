@@ -2,122 +2,112 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./google.css">
-  <link rel="shortcut icon" href="/img/icon/icon.png" type="image/x-icon">
-  <title>ポートフォリオ｜プロフィール</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/googleicon.css">
+    <link rel="shortcut icon" href="/img/icon/icon.png" type="image/x-icon">
+    <title>ポートフォリオ｜プロフィール</title>
 </head>
-<script>
-  function requestFullscreen(elem) {
-    // 全画面表示をリクエストするメソッドを取得
-    const method = elem.requestFullscreen || elem.webkitRequestFullscreen || elem.mozRequestFullScreen || elem.msRequestFullscreen;
-    if (method) {
-      method.call(elem); // 全画面表示をリクエスト
-    }
-  }
 
-  function openFullscreen() {
-    const elem = document.documentElement;
-    requestFullscreen(elem);
-  }
-</script>
-<script src="script.js"></script>
 <body>
-  <header>
-    <div class="mid">
-      <div class="macbutton"><p style="display: inline;color: #fe5f57;"><a href="./">⚫︎</a></p><p style="display: inline;color: #555555;">⚫︎</p><p style="display: inline;color: #2ac840;"><a href="#" id="fullScreenButton" onclick="openFullscreen();">⚫︎</a></p>
-      </div>
-      <div class="arrow">
-        <span class="material-symbols-outlined"><a href="#"
-            onclick="window.history.go(-1); return false;">arrow_back</a></span>
-        <span class="material-symbols-outlined"><a href="#"
-            onclick="window.history.go(1); return false;">arrow_forward</a></span>
-      </div>
-      <div class="search">
-        <span class="material-symbols-outlined search-icon">search</span>
-        <h1 class="title">プロフィール</h1>
-      </div>
-    </div>
-  </header>
-  <div class="header-margin"></div>
-  <div class="mid">
-    <div class="sidebar">
-      <div class="icons ">
-        <a href="home"><span class="material-symbols-outlined icon">home</span></a>
-        <a href="code"><span class="material-symbols-outlined icon">code</span></a>
-        <a href="wordpress"><span class="material-symbols-outlined icon">web</span></a>
-        <a href="document"><span class="material-symbols-outlined icon">description</span></a>
-        <a href="video"><span class="material-symbols-outlined icon">smart_display</span></a>
-        <a href="other"><span class="material-symbols-outlined icon">more_horiz</span></a>
-        <a href="profile"><span class="material-symbols-outlined icon-select">account_circle</span></a>
-      </div>
-    </div>
-    <div class="sub-sidebar">
-      <div class="title-item">プロフィール</div>
-      <div class="item"><a href="./profile">&nbsp;プロフィール</a></div>
-    </div>
-    <div class="contents">
-      <div class="mid">
-        <div class="tab1">
-          <span class="material-symbols-outlined tabicon">account_circle</span>プロフィール
+    <!--PC用のヘッダー-->
+    <header class="header-pc">
+        <div class="line-up">
+            <div class="title">
+                <a href="/home">
+                    <p class="titleja">ポートフォリオ</p>
+                    <p class="titleeng">hiromu.me</p>
+                </a>
+            </div>
+            <div class="line-up list">
+                <li><a class="menu" href="/">ホーム</a></li>
+                <li><a class="menu" href="/レポート">レポート</a></li>
+                <li><a class="menu" href="/code">自作サイト</a></li>
+                <li><a class="menu" href="/profile">プロフィール</a></li>
+            </div>
         </div>
-        <div class="tab2">
-        </div>
-      </div>
-      <div class="contents-text">
-        <h1>AboutMe</h3>
-          <div class="mid">
-            <img src="/img/icon/icon.png" style="height: 30px;" alt="">
-            <h2>合木洋睦(gogi hiromu)</h2>
-          </div>
-          <p>Webや動画などに興味のある学生です。</p>
-          <p>WordpressよりはHTML,CSSなど書きたいです。</p>
-          <img height="300px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=choko1229&theme=transparent&hide_border=true&count_private=true&locale=ja" />
-          <br>
-          <h3>My Skills</h3>
-          <table>
-            <tbody>
-              <tr>
-                <th>内容</th>
-                <th>具体例</th>
-                <th>得意度(Web開発を基準)</th>
-              </tr>
-              <tr>
-                <td>Web開発</td>
-                <td>htmlやCSS,JsなどでWebサイトを作成</td>
-                <td class="score">★★★★☆</td>
-              </tr>
-              <tr>
-                <td>サーバー構築</td>
-                <td>開発ではなくLinuxServerにてさまざまなサーバーを構築する</td>
-                <td class="score">★★★☆☆</td>
-              </tr>
-              <tr>
-                <td>動画制作</td>
-                <td>動画編集など</td>
-                <td class="score">★★☆☆☆</td>
-              </tr>
-            </tbody>
-          </table>
+    </header>
+    <!--モバイル用のヘッダー-->
+    <header class="header-mobile">
+        <div class="line-up">
+            <div class="title">
+                <a href="/home">
+                    <p class="titleja">ポートフォリオ</p>
+                    <p class="titleeng">hiromu.me</p>
+                </a>
+            </div>
+            <!-- ハンバーガーメニュー部分 -->
+            <div class="nav">
 
-      </div>
+                <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                <input id="drawer_input" class="drawer_hidden" type="checkbox">
+
+                <!-- ハンバーガーアイコン -->
+                <label for="drawer_input" class="drawer_open"><span></span></label>
+
+                <!-- メニュー -->
+                <nav class="nav_content">
+                    <ul class="nav_list">
+                        <li><a class="nav_item menu" href="/">ホーム</a></li>
+                        <li><a class="nav_item menu" href="/レポート">レポート</a></li>
+                        <li><a class="nav_item menu" href="/code">自作サイト</a></li>
+                        <li><a class="nav_item menu" href="/profile">プロフィール</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+
+    <div class="contents">
+        <h2>AboutMe</h2>
+        <div class="line-up">
+            <img src="/img/icon/icon.png" style="height: 30px;" alt="">
+            <h3>合木洋睦(gougi hiromu)</h3>
+        </div>
+        <br>
+        <a href="https://wakatime.com/@018c194e-65b2-45a6-be49-c3a435afd4f1"><img src="https://wakatime.com/badge/user/018c194e-65b2-45a6-be49-c3a435afd4f1.svg" alt="Total time coded since Nov 29 2023" /></a>
+        <p>Webや動画などに興味のある学生です。</p>
+        <p>WordpressよりはHTML,CSSなど書きたいです。</p>
+        <img height="300px"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=choko1229&theme=transparent&hide_border=true&count_private=true&locale=ja" />
+        <br>
+        
+        <h3>My Skills</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <th>内容</th>
+                    <th>具体例</th>
+                    <th>得意度(Web開発を基準)</th>
+                </tr>
+                <tr>
+                    <td>Web開発</td>
+                    <td>htmlやCSS,JsなどでWebサイトを作成</td>
+                    <td class="score">★★★★☆</td>
+                </tr>
+                <tr>
+                    <td>サーバー構築</td>
+                    <td>開発ではなくLinuxServerにてさまざまなサーバーを構築する</td>
+                    <td class="score">★★★☆☆</td>
+                </tr>
+                <tr>
+                    <td>動画制作</td>
+                    <td>動画編集など</td>
+                    <td class="score">★★☆☆☆</td>
+                </tr>
+            </tbody>
+        </table>
+
     </div>
-  </div>
-  <footer>
-    <div class="mid">
-      <div class="ficon1">
-        <span class="material-symbols-outlined ficon2">school</span>
-      </div>
-      <div class="copyright">
-        <p class="copyright-text">VScode風ポートフォリオページ</p>
-      </div>
-      <div class="host">
-        <p class="host-text">GitHub</p>
-      </div>
-    </div>
-  </footer>
+    <!--フッター-->
+    <footer>
+        <div class="line-up">
+            <p class="copyright">&copy; 2024 gougi hiromu</p>
+            <p class="create hide400"><a class="menu hide400"
+                    href="/url?page=https://github.com/choko1229/IntegratedStudy">Hosting by GitHub</a></p>
+        </div>
+    </footer>
 </body>
 
 </html>

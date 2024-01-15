@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./google.css">
+  <link rel="shortcut icon" href="/img/icon/icon.png" type="image/x-icon">
+  <title>ポートフォリオ｜home</title>
+</head>
+<script>
+  function requestFullscreen(elem) {
+    // 全画面表示をリクエストするメソッドを取得
+    const method = elem.requestFullscreen || elem.webkitRequestFullscreen || elem.mozRequestFullScreen || elem.msRequestFullscreen;
+    if (method) {
+      method.call(elem); // 全画面表示をリクエスト
+    }
+  }
+
+  function openFullscreen() {
+    const elem = document.documentElement;
+    requestFullscreen(elem);
+  }
+</script>
+<script src="script.js"></script>
+<body>
+  <header>
+    <div class="mid">
+      <div class="macbutton"><p style="display: inline;color: #fe5f57;"><a href="./">⚫︎</a></p><p style="display: inline;color: #555555;">⚫︎</p><p style="display: inline;color: #2ac840;"><a href="#" id="fullScreenButton" onclick="openFullscreen();">⚫︎</a></p>
+      </div>
+      <div class="arrow">
+        <span class="material-symbols-outlined"><a href="#"
+            onclick="window.history.go(-1); return false;">arrow_back</a></span>
+        <span class="material-symbols-outlined"><a href="#"
+            onclick="window.history.go(1); return false;">arrow_forward</a></span>
+      </div>
+      <div class="search">
+        <span class="material-symbols-outlined search-icon">search</span>
+        <h1 class="title">ホーム</h1>
+      </div>
+    </div>
+  </header>
+  <div class="header-margin"></div>
+  <div class="mid">
+    <div class="sidebar">
+      <div class="icons ">
+        <a href="home"><span class="material-symbols-outlined icon-select">home</span></a>
+        <a href="code"><span class="material-symbols-outlined icon">code</span></a>
+        <a href="wordpress"><span class="material-symbols-outlined icon">web</span></a>
+        <a href="document"><span class="material-symbols-outlined icon">description</span></a>
+        <a href="video"><span class="material-symbols-outlined icon">smart_display</span></a>
+        <a href="other"><span class="material-symbols-outlined icon">more_horiz</span></a>
+        <a href="profile"><span class="material-symbols-outlined icon">account_circle</span></a>
+      </div>
+    </div>
+    <div class="sub-sidebar">
+      <div class="title-item">ホーム</div>
+      <div class="item"><a href="./home">&nbsp;このページについて</a></div>
+    </div>
+    <div class="contents">
+      <div class="mid">
+        <div class="tab1">
+          <span class="material-symbols-outlined tabicon">waving_hand</span>ようこそ
+        </div>
+        <div class="tab2">
+        </div>
+      </div>
+      <div class="contents-text">
+        <h1>ポートフォリオページ</h1>
+        <h2>高校３年間成果物</h2>
+        <br>
+        <div class="caution">
+          <h3>推奨解像度よりの低いです。</h3>
+          <p>現在閲覧している端末は推奨解像度よりも小さいディスプレイです。</p>
+          <p>解像度が低いと一部閲覧に支障が発生します。</p>
+          <p>推奨解像度:横幅800px以上</p>
+          <p>例:PC/タブレット</p>
+        </div>
+        <br>
+        <h3>成果物一覧表</h3>
+        <p style="margin-top: 5px;"><a href="./code"><span
+              class="material-symbols-outlined listicon">code</span>自作サイト</a></p>
+        <p><a href="./code"><span class="material-symbols-outlined listicon">web</span>wordpressサイト</a></p>
+        <p><a href="./document"><span class="material-symbols-outlined listicon">description</span>パンフレット等の掲示物</a></p>
+        <p><a href="./video"><span class="material-symbols-outlined listicon">smart_display</span><a
+              href="./video">動画</a></p>
+        <p><a href="./other"><span class="material-symbols-outlined listicon">more_horiz</span><a href="./other">その他</a>
+        </p>
+        <br>
+        <h3>このページについて</h3>
+        <p>探求の時間で過去に作ったものをまとめていたのを<a href="https://code.visualstudio.com/">VScode</a>風にまとめてみました。</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="mid">
+      <div class="ficon1">
+        <span class="material-symbols-outlined ficon2">school</span>
+      </div>
+      <div class="copyright">
+        <p class="copyright-text">VScode風ポートフォリオページ</p>
+      </div>
+      <div class="host">
+        <p class="host-text">GitHub</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

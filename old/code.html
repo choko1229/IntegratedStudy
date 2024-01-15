@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./google.css">
+  <link rel="shortcut icon" href="/img/icon/icon.png" type="image/x-icon">
+  <title>ポートフォリオ｜code</title>
+</head>
+<script>
+  function requestFullscreen(elem) {
+    // 全画面表示をリクエストするメソッドを取得
+    const method = elem.requestFullscreen || elem.webkitRequestFullscreen || elem.mozRequestFullScreen || elem.msRequestFullscreen;
+    if (method) {
+      method.call(elem); // 全画面表示をリクエスト
+    }
+  }
+
+  function openFullscreen() {
+    const elem = document.documentElement;
+    requestFullscreen(elem);
+  }
+</script>
+<script src="script.js"></script><body>
+  <header>
+    <div class="mid">
+      <div class="macbutton">
+        <p style="display: inline;color: #fe5f57;"><a href="./">⚫︎</a></p><p style="display: inline;color: #555555;">⚫︎</p><p style="display: inline;color: #2ac840;"><a href="#" id="fullScreenButton" onclick="openFullscreen();">⚫︎</a></p>
+      </div>
+      <div class="arrow">
+        <span class="material-symbols-outlined"><a href="#" onclick="window.history.go(-1); return false;">arrow_back</a></span>
+        <span class="material-symbols-outlined"><a href="#" onclick="window.history.go(1); return false;">arrow_forward</a></span>
+      </div>
+      <div class="search">
+        <span class="material-symbols-outlined search-icon">search</span><h1 class="title">自作サイト</h1>
+      </div>
+    </div>
+  </header>
+  <div class="header-margin"></div>
+  <div class="mid">
+    <div class="sidebar">
+      <div class="icons ">
+        <a href="home"><span class="material-symbols-outlined icon">home</span></a>
+        <a href="code"><span class="material-symbols-outlined icon-select">code</span></a>
+        <a href="wordpress"><span class="material-symbols-outlined icon">web</span></a>
+        <a href="document"><span class="material-symbols-outlined icon">description</span></a>
+        <a href="video"><span class="material-symbols-outlined icon">smart_display</span></a>
+        <a href="other"><span class="material-symbols-outlined icon">more_horiz</span></a>
+        <a href="profile"><span class="material-symbols-outlined icon">account_circle</span></a>
+      </div>
+    </div>
+    <div class="sub-sidebar">
+      <div class="title-item">自作サイト</div>
+      <div class="item"><a href="./code">&nbsp;about</a></div>
+      <div class="item"><a href="./code1">&nbsp;インタビューシップ１</a></div>
+      <div class="item"><a href="./code2">&nbsp;インタビューシップ２</a></div>
+      <div class="item"><a href="./code3">&nbsp;丸亀にぎわいプロジェクト(途中)</a></div>
+    </div>
+    <div class="contents">
+      <div class="mid">
+        <div class="tab1">
+          <span class="material-symbols-outlined tabicon">code</span>自作サイト
+        </div>
+        <div class="tab2">
+        </div>
+      </div>
+      <div class="contents-text">
+        <h1>自作サイト</h1>
+        <h2>HTMLやCSSなどのコードを用いたサイト</h2>
+        <br><br>
+        <h3>成果物一覧表</h3>
+        <div class="mid">
+          <a href="./interviewship1/"><img src="./img/thumbnail/interviewship1.png" style="width: 400px;" alt="インタビューシップ１"></a>
+          <a href="./interviewship2/"><img src="./img/thumbnail/interviewship2.png" style="width: 400px;" alt="インタビューシップ2"></a>
+        </div>
+        <a href="./mnp"><img src="./img/thumbnail/mnp.png" style="width: 400px;" alt="丸亀にぎわいプロジェクト"></a>
+        <br>
+        <h3>クリックしてページに飛ぶ</h3>
+        <p>実際に作ったページにアクセスすることができます。</p>
+        <p>ページの詳細な情報は左のタブからご覧ください。</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="mid">
+      <div class="ficon1">
+        <span class="material-symbols-outlined ficon2">school</span>
+      </div>
+      <div class="copyright">
+        <p class="copyright-text">VScode風ポートフォリオページ</p>
+      </div>
+      <div class="host">
+        <p class="host-text">GitHub</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,96 +1,87 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./google.css">
-  <link rel="shortcut icon" href="/img/icon/icon.png" type="image/x-icon">
-  <title>ポートフォリオ｜動画</title>
-</head>
-<script>
-  function requestFullscreen(elem) {
-    // 全画面表示をリクエストするメソッドを取得
-    const method = elem.requestFullscreen || elem.webkitRequestFullscreen || elem.mozRequestFullScreen || elem.msRequestFullscreen;
-    if (method) {
-      method.call(elem); // 全画面表示をリクエスト
-    }
-  }
 
-  function openFullscreen() {
-    const elem = document.documentElement;
-    requestFullscreen(elem);
-  }
-</script>
-<script src="script.js"></script><body>
-  <header>
-    <div class="mid">
-      <div class="macbutton">
-        <p style="display: inline;color: #fe5f57;"><a href="./">⚫︎</a></p><p style="display: inline;color: #555555;">⚫︎</p><p style="display: inline;color: #2ac840;"><a href="#" id="fullScreenButton" onclick="openFullscreen();">⚫︎</a></p>
-      </div>
-      <div class="arrow">
-        <span class="material-symbols-outlined"><a href="#" onclick="window.history.go(-1); return false;">arrow_back</a></span>
-        <span class="material-symbols-outlined"><a href="#" onclick="window.history.go(1); return false;">arrow_forward</a></span>
-      </div>
-      <div class="search">
-        <span class="material-symbols-outlined search-icon">search</span><h1 class="title">動画</h1>
-      </div>
-    </div>
-  </header>
-  <div class="header-margin"></div>
-  <div class="mid">
-    <div class="sidebar">
-      <div class="icons ">
-        <a href="home"><span class="material-symbols-outlined icon">home</span></a>
-        <a href="code"><span class="material-symbols-outlined icon">code</span></a>
-        <a href="wordpress"><span class="material-symbols-outlined icon">web</span></a>
-        <a href="document"><span class="material-symbols-outlined icon">description</span></a>
-        <a href="video"><span class="material-symbols-outlined icon-select">smart_display</span></a>
-        <a href="other"><span class="material-symbols-outlined icon">more_horiz</span></a>
-        <a href="profile"><span class="material-symbols-outlined icon">account_circle</span></a>
-      </div>
-    </div>
-    <div class="sub-sidebar">
-      <div class="title-item">動画</div>
-      <div class="item"><a href="./video">&nbsp;作成した動画</a></div>
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/googleicon.css">
+    <link rel="shortcut icon" href="/img/icon/icon.png" type="image/x-icon">
+    <title>ポートフォリオ｜動画</title>
+</head>
+
+<body>
+    <!--PC用のヘッダー-->
+    <header class="header-pc">
+        <div class="line-up">
+            <div class="title">
+                <a href="/home">
+                    <p class="titleja">ポートフォリオ</p>
+                    <p class="titleeng">hiromu.me</p>
+                </a>
+            </div>
+            <div class="line-up list">
+                <li><a class="menu" href="/">ホーム</a></li>
+                <li><a class="menu" href="/レポート">レポート</a></li>
+                <li><a class="menu" href="/code">自作サイト</a></li>
+                <li><a class="menu" href="/profile">プロフィール</a></li>
+            </div>
+        </div>
+    </header>
+    <!--モバイル用のヘッダー-->
+    <header class="header-mobile">
+        <div class="line-up">
+            <div class="title">
+                <a href="/home">
+                    <p class="titleja">ポートフォリオ</p>
+                    <p class="titleeng">hiromu.me</p>
+                </a>
+            </div>
+            <!-- ハンバーガーメニュー部分 -->
+            <div class="nav">
+
+                <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                <input id="drawer_input" class="drawer_hidden" type="checkbox">
+
+                <!-- ハンバーガーアイコン -->
+                <label for="drawer_input" class="drawer_open"><span></span></label>
+
+                <!-- メニュー -->
+                <nav class="nav_content">
+                    <ul class="nav_list">
+                        <li><a class="nav_item menu" href="/">ホーム</a></li>
+                        <li><a class="nav_item menu" href="/レポート">レポート</a></li>
+                        <li><a class="nav_item menu" href="/code">自作サイト</a></li>
+                        <li><a class="nav_item menu" href="/profile">プロフィール</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+
     <div class="contents">
-      <div class="mid">
-        <div class="tab1">
-          <span class="material-symbols-outlined tabicon">smart_display</span>動画
-        </div>
-        <div class="tab2">
-        </div>
-      </div>
-      <div class="contents-text">
-        <h1>動画制作</h1>
-        <h2>動画を扱ったもの</h2>
+        <h2>動画制作</h2>
+        <br>
+        <h3>動画を扱ったもの</h3>
         <br><br>
-        <h3>部活動紹介動画</h3>
-        <p>柔道部の部活動紹介動画の作成</p>
-        <br>
-        <h3>インタビューシップ研究会案内動画</h3>
-        <p>インタビューシップ研究会にて、入口に設置した動画</p>
-        <p>作り直しによりPowerPointを用いて、編集を行えるようにしました。</p>
-        <img src="/img/interviewship/powerpoint.png" style="width: 70%;" alt="">
-        <br>
-        <h3>中学生向け学校紹介動画</h3>
-        <p>依頼により中学生向け学校紹介動画の作成</p>
-      </div>
+        <h2>部活動紹介動画</h2>
+        <p>柔道部の部活動紹介動画の作成をしました。情熱大陸のパロディです。</p>
+        <br><br>
+        <h2>インタビューシップ研究会案内動画</h2>
+        <p>インタビューシップ研究会にて、入り口に設置した案内の動画です。</p>
+        <p>作り直しにより、PowerPointで編集をおこなるようにしました。</p>
+        <img src="/img/interviewship/powerpoint.png" style="width: 100%;max-width: 500px;" alt="">
+        <br><br>
+        <h2>中学生向け学校紹介動画</h2>
+        <p>先生からの依頼で中学生向けの学校紹介動画を作成しました。</p>
     </div>
-  </div>
-  <footer>
-    <div class="mid">
-      <div class="ficon1">
-        <span class="material-symbols-outlined ficon2">school</span>
-      </div>
-      <div class="copyright">
-        <p class="copyright-text">VScode風ポートフォリオページ</p>
-      </div>
-      <div class="host">
-        <p class="host-text">GitHub</p>
-      </div>
-    </div>
-  </footer>
+    <!--フッター-->
+    <footer>
+        <div class="line-up">
+            <p class="copyright">&copy; 2024 gougi hiromu</p>
+            <p class="create hide400"><a class="menu hide400" href="/url?page=https://github.com/choko1229/IntegratedStudy">Hosting by GitHub</a></p>
+        </div>
+    </footer>
 </body>
+
 </html>
